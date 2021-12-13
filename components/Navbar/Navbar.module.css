@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 2rem;
+}
+.nav__item{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav__button_group{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.8rem;
+   
+}
