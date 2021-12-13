@@ -1,9 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Home from '../components/Home'
 import Navbar from '../components/Navbar'
 
-const Home: NextPage = () => {
+const Portfolio: NextPage = () => {
   return (
     <div>
       <Head>
@@ -14,8 +15,11 @@ const Home: NextPage = () => {
       <header>
         <Navbar />
       </header>
+      <section id="home">
+        <Home /> 
+      </section>
     </div>
   )
 }
 
-export default Home
+export default Portfolio
