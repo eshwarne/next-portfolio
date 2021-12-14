@@ -2,8 +2,8 @@ import styles from "./Navbar.module.scss"
 export function Navbar(){
     return(
         <nav className={styles.nav}>
-          <div className={styles.logo}>
-            <h1>Eshwar Sundar</h1>
+          <div>
+            <h1 className={styles.logo}>Eshwar Sundar</h1>
           </div>
           <div className={styles.nav__button_group}>
             <li className={styles.nav__item}>Home</li>

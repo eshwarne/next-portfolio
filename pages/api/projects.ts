@@ -37,6 +37,22 @@ const projects:Project[] = [
     isInProd: true,
     isOpenSource: false,
     prodUrl:"https://play.google.com/store/apps/details?id=com.dev.calsci&hl=en_IN&gl=US"
+  },
+  {
+    name:"CalSci",
+    description: "A scientific calculator that helps you save, restore and label calculations.",
+    technologies: ["Java", "Android"],
+    isInProd: true,
+    isOpenSource: false,
+    prodUrl:"https://play.google.com/store/apps/details?id=com.dev.calsci&hl=en_IN&gl=US"
+  },
+  {
+    name:"CalSci",
+    description: "A scientific calculator that helps you save, restore and label calculations.",
+    technologies: ["Java", "Android"],
+    isInProd: true,
+    isOpenSource: false,
+    prodUrl:"https://play.google.com/store/apps/details?id=com.dev.calsci&hl=en_IN&gl=US"
   }
 ]
 

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Home from '../components/Home'
 import Navbar from '../components/Navbar'
+import Projects from '../components/Projects'
 
 const Portfolio: NextPage = () => {
   return (
@@ -17,6 +18,9 @@ const Portfolio: NextPage = () => {
       </header>
       <section id="home">
         <Home /> 
+      </section>
+      <section>
+        <Projects />
       </section>
     </div>
   )
