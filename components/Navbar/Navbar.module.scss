@@ -1,25 +1,23 @@
 @import "../../styles/variables";
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 3rem;
-    flex-wrap: wrap;
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.logo{
-    font-size: 2rem;
+.logo {
+  font-size: 2rem;
 }
-.nav__item{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    cursor: pointer;
-    &:hover{
-        transform: scale(1.1);
-    }
+.nav__item {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
-.nav__button_group{
-    display: flex;
-    gap: 3rem;
-    font-size: 1.8rem;
+.nav__button_group {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.8rem;
 }
