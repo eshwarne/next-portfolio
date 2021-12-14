@@ -39,20 +39,20 @@ const projects:Project[] = [
     prodUrl:"https://play.google.com/store/apps/details?id=com.dev.calsci&hl=en_IN&gl=US"
   },
   {
-    name:"CalSci",
-    description: "A scientific calculator that helps you save, restore and label calculations.",
-    technologies: ["Java", "Android"],
-    isInProd: true,
-    isOpenSource: false,
-    prodUrl:"https://play.google.com/store/apps/details?id=com.dev.calsci&hl=en_IN&gl=US"
+    name:"TubeNav",
+    description: "A google chrome extension that allows to search Youtube videos with any selected keyword from any webpage.",
+    technologies: ["Javascript", "Google Chrome"],
+    isInProd: false,
+    isOpenSource: true,
+    sourceUrl:"https://github.com/eshwarne/TubeNav"
   },
   {
-    name:"CalSci",
-    description: "A scientific calculator that helps you save, restore and label calculations.",
-    technologies: ["Java", "Android"],
-    isInProd: true,
-    isOpenSource: false,
-    prodUrl:"https://play.google.com/store/apps/details?id=com.dev.calsci&hl=en_IN&gl=US"
+    name:"GoGoCubo",
+    description: "A cross platform infinitely playable game developed in Unity Game Engine using C#",
+    technologies:["C#", "Unity Game Engine"],
+    isInProd: false,
+    isOpenSource: true,
+    sourceUrl:"https://github.com/eshwarne/GoGoCubo"
   }
 ]
 

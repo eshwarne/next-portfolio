@@ -1,9 +1,10 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Home from '../components/Home'
-import Navbar from '../components/Navbar'
-import Projects from '../components/Projects'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import About from "../components/About";
+import Home from "../components/Home";
+import Navbar from "../components/Navbar";
+import Projects from "../components/Projects";
 
 const Portfolio: NextPage = () => {
   return (
@@ -17,13 +18,16 @@ const Portfolio: NextPage = () => {
         <Navbar />
       </header>
       <section id="home">
-        <Home /> 
+        <Home />
+      </section>
+      <section>
+        <About />
       </section>
       <section>
         <Projects />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
