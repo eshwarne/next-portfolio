@@ -15,13 +15,19 @@ export const About = () => {
           me on <i style={{ color: "#28FFBF" }}>@DiningPhilosopher</i>
         </div>
         <div className={`${styles.about__visual} ${styles.about__item}`}>
-          <div className={styles.about__visual__image}>
+          <div
+            className={`${styles.about__visual__image} ${styles["about__visual__image--one"]}`}
+          >
             <Image src={MeFilming} layout="fill" objectFit="cover" />
           </div>
-          <div className={styles.about__visual__image}>
+          <div
+            className={`${styles.about__visual__image}  ${styles["about__visual__image--two"]}`}
+          >
             <Image src={MeSports} layout="fill" objectFit="cover" />
           </div>
-          <div className={styles.about__visual__image}>
+          <div
+            className={`${styles.about__visual__image}  ${styles["about__visual__image--three"]}`}
+          >
             <Image src={MeTravel} layout="fill" objectFit="cover" />
           </div>
         </div>

@@ -1,27 +1,55 @@
 @import "../../styles/variables";
 .about {
+  height: 100vh;
   font-size: $FONT-SIZE-TEXT;
 }
 .about__gallery {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  flex-wrap: wrap;
+  gap: 15rem;
 }
-.about__item {
-  flex: 1;
-}
+
 .about__textual {
   text-align: center;
+  min-width: 30vmax;
+  max-width: 40vmax;
 }
 .about__title {
   font-size: $FONT-SIZE-HEADING-MAIN;
 }
 .about__visual {
-  display: flex;
-}
-.about__visual__image {
-  justify-self: flex-end;
   position: relative;
-  width: 15vw;
-  height: 15vw;
+  min-width: 30vmax;
+  display: flex;
+  justify-content: flex-end;
+  &:hover div:not(:hover) {
+    transform: scale(0.97);
+  }
+  &__image {
+    width: 20vmax;
+    height: 20vmax;
+    top: 0;
+    left: 0;
+    position: absolute;
+    box-shadow: 0 1.5rem 20px rgba(0, 0, 0, 0.7);
+    transition: all 0.2s;
+    z-index: 5;
+    &--one {
+      left: 100px;
+      top: -50px;
+    }
+    &--two {
+      top: 100px;
+      left: 50px;
+    }
+    &--three {
+      left: 2px;
+    }
+    &:hover {
+      outline: white solid 10px;
+      z-index: 10;
+      transform: scale(1.1);
+    }
+  }
 }
