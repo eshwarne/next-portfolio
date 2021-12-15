@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 @import "../../styles/utils";
-
+@import "../../styles/breakpoint_manager";
 .skills {
   &:hover &__title::after {
     width: 50%;
@@ -19,4 +19,7 @@
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   font-size: $FONT-SIZE-TEXT;
+  @include respondTo(mobile) {
+    grid-template-columns: 1fr;
+  }
 }

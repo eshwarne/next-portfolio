@@ -1,9 +1,12 @@
 @import "../../styles/variables";
-
+@import "../../styles/breakpoint_manager";
 .skills {
   &__skill_item {
     &:nth-child(even) {
       transform: translateY(50%);
+      @include respondTo(mobile) {
+        transform: translateY(0%);
+      }
     }
 
     &__title {
