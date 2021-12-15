@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 @import "../../styles/utils";
 @import "../../styles/breakpoint_manager";
+
 .skills {
   &:hover &__title::after {
     width: 50%;

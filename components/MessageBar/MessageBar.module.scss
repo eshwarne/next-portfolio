@@ -1,0 +1,37 @@
+.messageBar {
+  display: flex;
+  position: absolute;
+  transition: all 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #3d3d3d;
+  z-index: 20000;
+  padding: 0.5rem;
+  &__close_btn {
+    background-color: #f44336;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+      transform: scale(1.05);
+    }
+    & > a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+.link {
+  color: #4f6cff;
+  font-weight: bold;
+  text-decoration: underline;
+}
