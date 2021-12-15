@@ -1,10 +1,22 @@
 @import "../../styles/variables";
+@import "../../styles/utils";
+
+.skills {
+  &:hover &__title::after {
+    width: 50%;
+  }
+}
+
 .skills__title {
   font-size: $FONT-SIZE-HEADING-MAIN;
+  position: relative;
+  @include addBottomLine(0%);
 }
+
 .skills__gallery {
-  display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 10rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
   font-size: $FONT-SIZE-TEXT;
 }

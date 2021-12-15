@@ -11,7 +11,7 @@ export const Skills = () => {
       setSkills(skillsData.skills);
     };
     getSkillsData();
-  });
+  }, []);
   return (
     <div className={styles.skills}>
       <h1 className={styles.skills__title}>Skills Stack</h1>

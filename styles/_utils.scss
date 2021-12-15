@@ -1,0 +1,12 @@
+@mixin addBottomLine($width-in-percent) {
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    width: $width-in-percent;
+    transition: all 0.5s;
+    border-bottom: white solid 2px;
+  }
+}

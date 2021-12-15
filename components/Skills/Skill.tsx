@@ -1,3 +1,4 @@
+import styles from "./Skill.module.scss";
 export type SkillPropsType = {
   title: string;
   tools: string[];
@@ -5,11 +6,15 @@ export type SkillPropsType = {
 
 export const Skill = ({ title, tools }: SkillPropsType) => {
   return (
-    <div>
-      <h3>{title}</h3>
-      {tools.map((tool) => (
-        <li>{tool}</li>
-      ))}
+    <div className={styles.skills__skill_item}>
+      <h3 className={styles.skills__skill_item__title}>{title}</h3>
+      <div className={styles.skills__skill_item__tools}>
+        {tools.map((tool) => (
+          <li className={styles.skills__skill_item__tool} key={tool}>
+            {tool}
+          </li>
+        ))}
+      </div>
     </div>
   );
 };

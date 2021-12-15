@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import "./variables.scss";
 @import "./breakpoint_manager";
+@import "./utils";
 
 html,
 body {
@@ -20,6 +21,13 @@ body {
   @include respondTo(desktop-big) {
     margin: $LAYOUT-PAGE-MARGIN-LARGE;
   }
+}
+#logo-text {
+  position: relative;
+  @include addBottomLine(0%);
+}
+.underlined::after {
+  width: 100% !important;
 }
 a {
   color: inherit;

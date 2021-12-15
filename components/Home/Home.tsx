@@ -11,7 +11,19 @@ export function Home() {
     <div className={styles.home}>
       <div className={styles.home__main}>
         <div className={styles.home__image}>
-          <Image src={pictureSelf} layout="fill" />
+          <Image
+            src={pictureSelf}
+            alt="Eshwar Sundar photo"
+            layout="fill"
+            onMouseEnter={() => {
+              document.getElementById("logo-text")?.classList.add("underlined");
+            }}
+            onMouseLeave={() => {
+              document
+                .getElementById("logo-text")
+                ?.classList.remove("underlined");
+            }}
+          />
         </div>
         <div className={styles.home__description}>
           Hey! I am Eshwar. I make intuitive and performant user interfaces. I

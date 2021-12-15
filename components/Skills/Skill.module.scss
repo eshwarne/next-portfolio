@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.skills {
+  &__skill_item {
+    &:nth-child(even) {
+      transform: translateY(50%);
+    }
+
+    &__title {
+      text-align: center;
+      font-size: $FONT-SIZE-HEADING-SECONDARY;
+    }
+
+    &__tools {
+      display: flex;
+      flex-direction: column;
+
+      & > li:first-of-type {
+        border-top: none;
+      }
+      & > li:last-of-type {
+        border-bottom: #fdfce5 solid 0.2rem;
+      }
+    }
+    &__tool {
+      padding: 1rem;
+      background-color: black;
+      list-style: none;
+      display: inline-block;
+      border: #fdfce5 solid 0.2rem;
+      border-radius: 0.5rem;
+      border-bottom: none;
+    }
+  }
+}

@@ -13,7 +13,7 @@ const skills:Skill[] = [
         "Javascript", "ReactJS", "Swift Storyboard", "Swift UI", "React Native", "Flutter"
     ]},
     {title:"Back End", tools:[
-        "NodeJS", "Core JAVA", "SQL"
+        "NodeJS", "Core JAVA", "SQL", "GoLang", "NGINX"
     ]},
     {title:"Infrastructure", tools:[
         "Google Cloud Platform", "Docker", "Kubernetes", "Istio Service Mesh"

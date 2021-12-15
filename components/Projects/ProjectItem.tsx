@@ -13,6 +13,18 @@ type ProjectItemPropsType = {
   projectItem: ProjectType;
 };
 export const ProjectItem = ({ projectItem }: ProjectItemPropsType) => {
+  const getProdUrl = (project: ProjectType) => {
+    if (project.isInProd) {
+      return { href: projectItem.prodUrl };
+    }
+    return {};
+  };
+  const getSourceUrl = (project: ProjectType) => {
+    if (project.isOpenSource) {
+      return { href: projectItem.sourceUrl };
+    }
+    return {};
+  };
   return (
     <div className={styles.project__item}>
       <div className={styles.project__main}>
@@ -21,7 +33,7 @@ export const ProjectItem = ({ projectItem }: ProjectItemPropsType) => {
         <div className={styles.button__group}>
           <div>
             <a
-              href={projectItem.isInProd && projectItem.prodUrl}
+              {...getProdUrl(projectItem)}
               target="blank"
               className={`${styles.button} ${
                 !projectItem.isInProd && styles["button--disabled"]
@@ -32,7 +44,7 @@ export const ProjectItem = ({ projectItem }: ProjectItemPropsType) => {
           </div>
           <div>
             <a
-              href={projectItem.isOpenSource && projectItem.sourceUrl}
+              {...getSourceUrl(projectItem)}
               target="blank"
               className={`${styles.button} ${
                 !projectItem.isOpenSource && styles["button--disabled"]
@@ -46,7 +58,11 @@ export const ProjectItem = ({ projectItem }: ProjectItemPropsType) => {
       <div className={styles.project__tech_stack}>
         <span style={{ marginBottom: "5px" }}>Tech Stack</span>
         {projectItem.technologies.map((technology) => {
-          return <div className={styles.project__technology}>{technology}</div>;
+          return (
+            <div className={styles.project__technology} key={technology}>
+              {technology}
+            </div>
+          );
         })}
       </div>
     </div>

@@ -26,17 +26,32 @@ export const About = () => {
           <div
             className={`${styles.about__visual__image} ${styles["about__visual__image--one"]}`}
           >
-            <Image src={MeFilming} layout="fill" objectFit="cover" />
+            <Image
+              alt="Eshwar Sundar Filming"
+              src={MeFilming}
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
           <div
             className={`${styles.about__visual__image}  ${styles["about__visual__image--two"]}`}
           >
-            <Image src={MeSports} layout="fill" objectFit="cover" />
+            <Image
+              alt="Eshwar Sundar Football"
+              src={MeSports}
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
           <div
             className={`${styles.about__visual__image}  ${styles["about__visual__image--three"]}`}
           >
-            <Image src={MeTravel} layout="fill" objectFit="cover" />
+            <Image
+              alt="Eshwar Sundar Travel"
+              src={MeTravel}
+              layout="fill"
+              objectFit="cover"
+            />
           </div>
         </div>
       </div>

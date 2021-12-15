@@ -1,10 +1,20 @@
 @import "../../styles/variables";
 @import "../../styles/breakpoint_manager";
+@import "../../styles/utils";
 .about {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  &:hover &__title::after {
+    width: 50%;
+  }
+  &__title {
+    font-size: $FONT-SIZE-HEADING-MAIN;
+    position: relative;
+    @include addBottomLine(0%);
+  }
 }
+
 .about__gallery {
   align-items: center;
   display: flex;
@@ -29,9 +39,7 @@
   align-items: center;
   gap: 5rem;
 }
-.about__title {
-  font-size: $FONT-SIZE-HEADING-MAIN;
-}
+
 .about__visual {
   position: relative;
   min-width: 30vw;

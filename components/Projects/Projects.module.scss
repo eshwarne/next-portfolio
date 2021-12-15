@@ -1,10 +1,19 @@
 @import "../../styles/variables";
+@import "../../styles/utils";
+.projects {
+  &:hover &__title::after {
+    width: 50%;
+  }
+}
 .projects__title {
+  position: relative;
   font-size: $FONT-SIZE-HEADING-MAIN;
+  @include addBottomLine(0%);
 }
 .projects__gallery {
   display: flex;
   gap: 3rem;
   flex-wrap: wrap;
   font-size: $FONT-SIZE-TEXT;
+  margin-bottom: 20vmin;
 }
