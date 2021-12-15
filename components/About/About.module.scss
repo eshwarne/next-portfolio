@@ -64,9 +64,12 @@
     &--one {
       left: 100px;
       top: -50px;
+      @include respondTo(mobile) {
+        left: 30px;
+      }
     }
     &--two {
-      top: 100px;
+      top: 90px;
       left: 50px;
     }
     &--three {

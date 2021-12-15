@@ -21,5 +21,6 @@
   font-size: $FONT-SIZE-TEXT;
   @include respondTo(mobile) {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
