@@ -5,6 +5,7 @@ import About from "../components/About";
 import Home from "../components/Home";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 
 const Portfolio: NextPage = () => {
   return (
@@ -12,7 +13,7 @@ const Portfolio: NextPage = () => {
       <Head>
         <title>Eshwar Sundar | Software Engineer</title>
         <meta name="description" content="Eshwar Sundar's portfolio website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/picture-self.jpeg" />
       </Head>
       <Navbar />
       <div className={"pageContainer"}>
@@ -24,6 +25,9 @@ const Portfolio: NextPage = () => {
         </section>
         <section id="projects">
           <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
         </section>
       </div>
     </>

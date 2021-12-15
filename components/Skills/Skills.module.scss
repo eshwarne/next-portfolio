@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+.skills__title {
+  font-size: $FONT-SIZE-HEADING-MAIN;
+}
+.skills__gallery {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  font-size: $FONT-SIZE-TEXT;
+}
