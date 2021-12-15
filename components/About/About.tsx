@@ -6,7 +6,9 @@ import MeTravel from "../../public/travel.jpg";
 export const About = () => {
   return (
     <div className={styles.about}>
-      <h2 className={styles.about__title}>About</h2>
+      <div>
+        <h2 className={styles.about__title}>About</h2>
+      </div>
       <div className={styles.about__gallery}>
         <div className={`${styles.about__textual} ${styles.about__item}`}>
           <div>

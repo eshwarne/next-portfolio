@@ -5,6 +5,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 20vh;
+  @include respondTo(mobile) {
+    gap: 10vh;
+  }
   &:hover &__title::after {
     width: 50%;
   }
@@ -16,17 +20,16 @@
 }
 
 .about__gallery {
+  justify-self: flex-start;
   align-items: center;
   display: flex;
   justify-content: center;
   gap: 15rem;
-  min-height: 70vh;
   font-size: $FONT-SIZE-TEXT;
   @include respondTo(mobile) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 150vh;
   }
 }
 
