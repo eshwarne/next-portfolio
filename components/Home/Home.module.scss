@@ -1,11 +1,12 @@
+@import "../../styles/variables";
+
 .home {
-  height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   font-size: 1.8rem;
   margin-block: 4rem;
   align-items: center;
-  gap: 2rem;
   &__image {
     position: relative;
     width: 20rem;
@@ -15,6 +16,26 @@
   }
   &__description {
     text-align: center;
+  }
+}
+
+.home__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  &_button {
+    background-color: white;
+    display: block;
+    color: $COLOR-TEXT-SECONDARY;
+    padding-block: 0.5rem;
+    padding-inline: 5ch;
+    min-width: 7rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.5rem;
   }
 }
 

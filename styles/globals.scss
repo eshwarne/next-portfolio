@@ -1,18 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
 @import "./variables.scss";
+@import "./breakpoint_manager";
 
 html,
 body {
   padding: 0;
   box-sizing: border-box;
-
-  margin-inline: $LAYOUT-PAGE-MARGIN;
   font-family: "Fira Code", monospace;
-  font-size: 10px;
+  font-size: 65%;
   background-color: $COLOR-BACKGROUND;
   color: $COLOR-TEXT-PRIMARY;
+  scroll-behavior: smooth;
 }
-
+.pageContainer {
+  margin: $LAYOUT-PAGE-MARGIN-MEDIUM;
+  @include respondTo(mobile) {
+    margin: $LAYOUT-PAGE-MARGIN-SMALL;
+  }
+  @include respondTo(desktop-big) {
+    margin: $LAYOUT-PAGE-MARGIN-LARGE;
+  }
+}
 a {
   color: inherit;
   text-decoration: none;

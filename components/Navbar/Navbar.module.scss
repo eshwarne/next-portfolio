@@ -1,14 +1,31 @@
 @import "../../styles/variables";
+@import "../../styles/breakpoint_manager";
 .nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  padding-inline: $LAYOUT-PAGE-MARGIN-SMALL;
   display: flex;
+  z-index: 10000;
   align-items: center;
+  background-color: rgba(23, 23, 23, 0.91);
+  backdrop-filter: blur(6px);
   justify-content: space-between;
-  flex-wrap: wrap;
+  @include respondTo(mobile) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .logo {
   font-size: $FONT-SIZE-HEADING-MAIN;
+  text-align: center;
+  @include respondTo(mobile) {
+    font-size: 2rem;
+  }
 }
 .nav__item {
+  text-align: center;
   display: flex;
   flex-direction: row;
   font-size: $FONT-SIZE-HEADING-SECONDARY * 0.5;

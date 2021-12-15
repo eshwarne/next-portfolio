@@ -8,25 +8,25 @@ import Projects from "../components/Projects";
 
 const Portfolio: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Eshwar Sundar | Software Engineer</title>
         <meta name="description" content="Eshwar Sundar's portfolio website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <Navbar />
-      </header>
-      <section id="home">
-        <Home />
-      </section>
-      <section>
-        <About />
-      </section>
-      <section>
-        <Projects />
-      </section>
-    </div>
+      <Navbar />
+      <div className={"pageContainer"}>
+        <section>
+          <Home />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+      </div>
+    </>
   );
 };
 

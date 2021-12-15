@@ -9,10 +9,18 @@ export const About = () => {
       <h2 className={styles.about__title}>About</h2>
       <div className={styles.about__gallery}>
         <div className={`${styles.about__textual} ${styles.about__item}`}>
-          When I am not coding, I do a lot of other things. I make and act in
-          sci-fi and thriller films, I travel a lot with my friends and I love
-          playing football. If you are playing Call Of Duty this weekend, find
-          me on <i style={{ color: "#28FFBF" }}>@DiningPhilosopher</i>
+          <div>
+            I love writing code! I strongly believe technology can change
+            anything and that's why I am so passionate about it! I am trying to
+            make impact in the Web and Mobile space. I love working across the
+            stack!
+          </div>
+          <div>
+            When I am not coding, I do a lot of other things. I make and act in
+            sci-fi and thriller films, I travel a lot with my friends and I love
+            playing football. If you are playing Call Of Duty this weekend, find
+            me on <i style={{ color: "#28FFBF" }}>@DiningPhilosopher</i>
+          </div>
         </div>
         <div className={`${styles.about__visual} ${styles.about__item}`}>
           <div

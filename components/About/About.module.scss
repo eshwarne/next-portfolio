@@ -1,28 +1,43 @@
 @import "../../styles/variables";
+@import "../../styles/breakpoint_manager";
 .about {
-  height: 100vh;
-  font-size: $FONT-SIZE-TEXT;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .about__gallery {
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 15rem;
+  min-height: 70vh;
+  font-size: $FONT-SIZE-TEXT;
+  @include respondTo(mobile) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 150vh;
+  }
 }
 
 .about__textual {
   text-align: center;
-  min-width: 30vmax;
-  max-width: 40vmax;
+  min-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 .about__title {
   font-size: $FONT-SIZE-HEADING-MAIN;
 }
 .about__visual {
   position: relative;
-  min-width: 30vmax;
+  min-width: 30vw;
+  min-height: 30vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   &:hover div:not(:hover) {
     transform: scale(0.97);
   }
@@ -44,7 +59,7 @@
       left: 50px;
     }
     &--three {
-      left: 2px;
+      left: -80px;
     }
     &:hover {
       outline: white solid 10px;
