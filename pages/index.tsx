@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import About from "../components/About";
-import { Footer } from "../components/Footer/Footer";
+import Footer from "../components/Footer";
 import Home from "../components/Home";
 import MessageBar from "../components/MessageBar";
 import Navbar from "../components/Navbar";
