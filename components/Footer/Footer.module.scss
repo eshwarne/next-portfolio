@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoint_manager";
+.footer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10vh;
+  gap: 10vw;
+  transition: all 0.5s;
+  min-height: 80vh;
+  @include respondTo(mobile) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10vh;
+  }
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    border-bottom: white solid 2px;
+  }
+  &__text {
+    font-size: $FONT-SIZE-TEXT * 1.2;
+    text-align: center;
+  }
+  &__image {
+    position: relative;
+    width: 25vmax;
+    height: 25vmax;
+    z-index: 10000;
+    aspect-ratio: 1;
+    outline-offset: 10px;
+    &:hover {
+      transform: scale(1.1);
+      outline: white solid 10px;
+    }
+  }
+}
