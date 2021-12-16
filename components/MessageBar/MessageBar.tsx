@@ -6,7 +6,7 @@ export const MessageBar = () => {
   return (
     <div className={styles.messageBar} style={{ opacity: getDisplayState() }}>
       <div className={styles.messageBar__message}>
-        If you find the website good, feel free to reuse it. Made with 💝 using
+        If you find the website cool, feel free to reuse it. Made with 💝 using
         NextJS.{" "}
         <a
           href="https://github.com/eshwarne/next-portfolio"
