@@ -1,3 +1,4 @@
+@import "../../styles/breakpoint_manager";
 .messageBar {
   display: flex;
   position: absolute;
@@ -28,6 +29,9 @@
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
     }
+  }
+  @include respondTo(mobile) {
+    display: none;
   }
 }
 .link {
