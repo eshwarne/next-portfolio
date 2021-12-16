@@ -9,6 +9,7 @@ import GithubIcon from "../icons/Github";
 export function Home() {
   return (
     <div className={styles.home}>
+      <span className={styles.home__locator} id="home"></span>
       <div className={styles.home__main}>
         <div className={styles.home__image}>
           <Image

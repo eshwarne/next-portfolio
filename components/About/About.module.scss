@@ -4,8 +4,13 @@
 .about {
   min-height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 10vh;
+  &__locator {
+    position: absolute;
+    top: -$LAYOUT-NAVBAR-MAX-HEIGHT;
+  }
   @include respondTo(mobile) {
     gap: 5vh;
   }

@@ -20,16 +20,16 @@ const Portfolio: NextPage = () => {
       <MessageBar />
       <Navbar />
       <div className={"pageContainer"}>
-        <section id="home">
+        <section>
           <Home />
         </section>
-        <section id="about">
+        <section>
           <About />
         </section>
-        <section id="projects">
+        <section>
           <Projects />
         </section>
-        <section id="skills">
+        <section>
           <Skills />
         </section>
         <footer>

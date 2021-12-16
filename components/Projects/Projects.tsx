@@ -15,6 +15,7 @@ export const Projects = () => {
   }, []);
   return (
     <div className={styles.projects}>
+      <span className={styles.projects__locator} id="projects"></span>
       <h2 className={styles.projects__title}>Projects</h2>
       <div className={styles.projects__gallery}>
         {projects.map((project) => (

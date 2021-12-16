@@ -3,8 +3,13 @@
 @import "../../styles/breakpoint_manager";
 
 .skills {
+  position: relative;
   &:hover &__title::after {
     width: 50%;
+  }
+  &__locator {
+    position: absolute;
+    top: -$LAYOUT-NAVBAR-MAX-HEIGHT;
   }
 }
 

@@ -12,6 +12,7 @@
   background-color: rgba(23, 23, 23, 0.91);
   backdrop-filter: blur(6px);
   justify-content: space-between;
+  max-height: 15vh;
   @include respondTo(mobile) {
     flex-direction: column;
     justify-content: center;

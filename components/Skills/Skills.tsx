@@ -14,6 +14,7 @@ export const Skills = () => {
   }, []);
   return (
     <div className={styles.skills}>
+      <span className={styles.skills__locator} id="skills"></span>
       <h1 className={styles.skills__title}>Skills Stack</h1>
       <div className={`${styles.skills__gallery}`}>
         {skills.map((skill) => (
