@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoint_manager";
+.moreAbout {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2vh;
+  &__backBtn {
+    justify-self: flex-start;
+    font-size: $FONT-SIZE-TEXT-LARGE * 2;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2) translateX(-2px);
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-self: center;
+    &__title {
+      text-align: center;
+      font-size: $FONT-SIZE-TEXT-LARGE * 1.2;
+    }
+    &__caption {
+      font-size: $FONT-SIZE-TEXT;
+    }
+  }
+}

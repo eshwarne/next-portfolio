@@ -3,6 +3,7 @@ import Head from "next/head";
 import CodingAbout from "../components/CodingAbout";
 import FilmsAbout from "../components/FilmsAbout";
 import GamingAbout from "../components/GamingAbout";
+import MoreAbout from "../components/MoreAbout";
 
 const AboutPage: NextPage = () => {
   return (
@@ -11,7 +12,9 @@ const AboutPage: NextPage = () => {
         <title>Eshwar Sundar - About</title>
       </Head>
       <div>
-        <h1>I love doing three things. CODE, FILM and TRAVEL</h1>
+        <section>
+          <MoreAbout />
+        </section>
         <section>
           <CodingAbout />
         </section>
