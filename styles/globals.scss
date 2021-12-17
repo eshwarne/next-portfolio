@@ -2,6 +2,20 @@
 @import "./variables.scss";
 @import "./breakpoint_manager";
 @import "./utils";
+.bgVideo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+.bgVideo_container {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
 
 html,
 body {
@@ -9,9 +23,11 @@ body {
   box-sizing: border-box;
   font-family: "Fira Code", monospace;
   font-size: 65%;
-  background-color: $COLOR-BACKGROUND;
   color: $COLOR-TEXT-PRIMARY;
   scroll-behavior: smooth;
+}
+body {
+  background-color: $COLOR-BACKGROUND;
 }
 .pageContainer {
   margin: $LAYOUT-PAGE-MARGIN-MEDIUM;
