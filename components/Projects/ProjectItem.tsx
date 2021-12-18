@@ -34,7 +34,8 @@ export const ProjectItem = ({ projectItem }: ProjectItemPropsType) => {
           <div>
             <a
               {...getProdUrl(projectItem)}
-              target="blank"
+              target="_blank"
+              rel="noreferrer"
               className={`${styles.button} ${
                 !projectItem.isInProd && styles["button--disabled"]
               }`}
@@ -45,7 +46,8 @@ export const ProjectItem = ({ projectItem }: ProjectItemPropsType) => {
           <div>
             <a
               {...getSourceUrl(projectItem)}
-              target="blank"
+              target="_blank"
+              rel="noreferrer"
               className={`${styles.button} ${
                 !projectItem.isOpenSource && styles["button--disabled"]
               }`}

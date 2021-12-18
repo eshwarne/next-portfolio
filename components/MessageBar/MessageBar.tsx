@@ -12,6 +12,7 @@ export const MessageBar = () => {
           href="https://github.com/eshwarne/next-portfolio"
           className={styles.link}
           target="_blank"
+          rel="noreferrer"
         >
           SOURCE CODE
         </a>

@@ -33,22 +33,38 @@ export function Home() {
         </div>
         <div className={styles.socialMedia}>
           <li className={styles.socialMedia__item}>
-            <a href="https://www.linkedin.com/in/eshwarne/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/eshwarne/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkedinIcon />
             </a>
           </li>
           <li className={styles.socialMedia__item}>
-            <a href="https://github.com/eshwarne/" target="_blank">
+            <a
+              href="https://github.com/eshwarne/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <GithubIcon />
             </a>
           </li>
           <li className={styles.socialMedia__item}>
-            <a href="https://www.youtube.com/c/EshwarNorthEast" target="_blank">
+            <a
+              href="https://www.youtube.com/c/EshwarNorthEast"
+              rel="noreferrer"
+              target="_blank"
+            >
               <YoutubeIcon />
             </a>
           </li>
           <li className={styles.socialMedia__item}>
-            <a href="https://www.instagram.com/eshwarne/" target="_blank">
+            <a
+              href="https://www.instagram.com/eshwarne/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <InstagramIcon />
             </a>
           </li>
