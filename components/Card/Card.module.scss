@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .flippableCard {
   position: relative;
   height: 40vh;
@@ -12,16 +14,12 @@
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     height: 40vh;
     width: 100%;
   }
   &:hover &__back {
-    background: linear-gradient(
-      14deg,
-      rgba(42, 52, 56, 1) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-
     transform: rotateY(0deg);
   }
   &:hover &__front {
@@ -32,7 +30,26 @@
   }
   &__back {
     transform: rotateY(180deg);
-
-    background-color: white;
+    background: linear-gradient(
+      14deg,
+      rgba(42, 52, 56, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    &__content {
+      font-size: $FONT-SIZE-TEXT;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      gap: 2ch;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1ch;
+      align-items: center;
+      &__title {
+        text-transform: uppercase;
+        font-size: $FONT-SIZE-HEADING-SECONDARY;
+      }
+    }
   }
 }
