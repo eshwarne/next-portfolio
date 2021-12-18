@@ -1,5 +1,7 @@
+import FlippableCard from "../Card";
 import styles from "./FilmsAbout.module.scss";
-
+import MultiverseFilm from "../../public/films_multiverse.jpeg";
+import DialFilm from "../../public/films_dial.jpeg";
 export const FilmsAbout = () => {
   return (
     <div className={styles.filmsAbout}>
@@ -22,7 +24,15 @@ export const FilmsAbout = () => {
             COVID situation made me put a pause to it as our team didn't want to
             violate any social distancing norms. Looking to get back soon!
           </div>
-          <div></div>
+          <div className={styles.filmsAbout__card}>
+            <FlippableCard
+              bgImage={MultiverseFilm}
+              title="Multiverse"
+              description="This is my attempt at a fully fledged Multiverse short film on 0 budget"
+              btnText="Watch Multiverse!"
+              btnLink="/"
+            />
+          </div>
         </div>
 
         <div className={styles.filmsAbout__content__two}>
@@ -33,7 +43,16 @@ export const FilmsAbout = () => {
             film making so different from any other field. Try making a few,
             it's fun!
           </div>
-          <div></div>
+          <div className={styles.filmsAbout__card}>
+            <FlippableCard
+              bgImage={DialFilm}
+              bgPosition="10% 0%"
+              description="A film that is close to my heart! Revolves around a unsolved mystery case in the neighborhood"
+              title="Dial"
+              btnText="Experience DIAL!"
+              btnLink="/"
+            />
+          </div>
         </div>
       </div>
     </div>

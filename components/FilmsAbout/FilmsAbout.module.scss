@@ -11,6 +11,11 @@
   flex-direction: column;
   gap: 2rem;
   padding: $LAYOUT-PAGE-MARGIN-MEDIUM;
+
+  &__card {
+    display: flex;
+    justify-content: center;
+  }
   &__title {
     align-self: center;
   }
@@ -20,12 +25,14 @@
     gap: 3rem;
     &__one {
       display: flex;
+      align-items: center;
       & > div {
         flex: 1;
       }
     }
     &__two {
       display: flex;
+      align-items: center;
       flex-direction: row-reverse;
       & > div {
         flex: 1;

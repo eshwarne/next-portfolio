@@ -29,14 +29,17 @@
   }
   &__image {
     position: relative;
-    width: 25vmax;
-    height: 25vmax;
+    min-width: 25vmax;
+    min-height: 25vmax;
     z-index: 10000;
+    border-radius: 10px;
+    overflow: hidden;
     aspect-ratio: 1;
-    outline-offset: 10px;
+    outline-offset: 1vmax;
+    transition: all 0.2s;
     &:hover {
       transform: scale(1.1);
-      outline: white solid 10px;
+      outline: white solid 5px;
     }
   }
 }
