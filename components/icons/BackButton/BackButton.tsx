@@ -20,7 +20,7 @@ export const BackButtonIcon = () => {
           <path
             d="M38 67.3971L73 36V49.7549L51.268 67.3971L73 82.6471V97L38 67.3971Z"
             stroke="black"
-            stroke-opacity="0.2"
+            strokeOpacity="0.2"
           />
         </g>
         <g id="back_button">
@@ -35,7 +35,7 @@ export const BackButtonIcon = () => {
           <path
             d="M1 68.3971L75 2V31.0882L29.0523 68.3971L75 100.647V131L1 68.3971Z"
             stroke="black"
-            stroke-opacity="0.2"
+            strokeOpacity="0.2"
           />
         </g>
       </g>
