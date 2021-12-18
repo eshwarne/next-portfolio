@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoint_manager";
+.routeButton {
+  color: $COLOR-TEXT-PRIMARY;
+  font-size: $FONT-SIZE-NAVIGATION;
+  border-bottom: $COLOR-TEXT-PRIMARY solid 3px;
+  transition: all 0.2s;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+  &:hover {
+    color: $COLOR-TEXT-SECONDARY;
+    border-radius: 10px;
+    background-color: $COLOR-TEXT-PRIMARY;
+    transform: scale(1.04);
+  }
+  &__btn {
+    padding-block: 1ch;
+    padding-inline: 2ch;
+  }
+}

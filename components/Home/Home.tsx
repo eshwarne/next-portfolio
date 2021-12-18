@@ -56,7 +56,7 @@ export function Home() {
 
         <div>
           <a href="#about" className={styles.home__main_button}>
-            KNOW MORE!
+            LET'S BEGIN!
           </a>
         </div>
       </div>

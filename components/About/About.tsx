@@ -3,6 +3,7 @@ import Image from "next/image";
 import MeFilming from "../../public/films.jpg";
 import MeSports from "../../public/sports.jpg";
 import MeTravel from "../../public/travel.jpg";
+import { RouteButton } from "../RouteButton/RouteButton";
 export const About = () => {
   return (
     <div className={styles.about}>
@@ -23,6 +24,9 @@ export const About = () => {
             and write books. I travel a lot with my friends and I love playing
             football. If you are playing Call Of Duty this weekend, find me on{" "}
             <i style={{ color: "#28FFBF" }}>@DiningPhilosopher</i> 🎮
+          </div>
+          <div>
+            <RouteButton content="KNOW MORE!" routePath="/about" />
           </div>
         </div>
         <div className={`${styles.about__visual} ${styles.about__item}`}>
