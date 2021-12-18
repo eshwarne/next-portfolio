@@ -2,19 +2,18 @@
 @import "../../styles/breakpoint_manager";
 .moreAbout {
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   padding: 2vh;
+  justify-content: center;
+  align-items: center;
   &__backBtn {
-    justify-self: flex-start;
-    font-size: $FONT-SIZE-TEXT-LARGE * 2;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
     cursor: pointer;
-    &:hover {
-      transform: scale(1.2) translateX(-2px);
-    }
   }
-
   &__gallery {
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -24,6 +23,7 @@
       font-size: $FONT-SIZE-TEXT-LARGE * 1.2;
     }
     &__caption {
+      text-align: center;
       font-size: $FONT-SIZE-TEXT;
     }
   }

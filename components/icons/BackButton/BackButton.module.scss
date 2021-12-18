@@ -1,0 +1,29 @@
+#back_button:hover #back_button_inner {
+  transition: all 0.2s;
+  opacity: 1;
+}
+#back_button {
+  padding: 0;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  &:hover {
+    animation: 0.5s linear infinite alternate button_inner_loop;
+  }
+}
+#back_button_wrapper {
+  fill: azure;
+}
+
+#back_button_inner {
+  opacity: 0;
+}
+
+@keyframes button_inner_loop {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
