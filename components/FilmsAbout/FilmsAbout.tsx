@@ -12,7 +12,7 @@ export const FilmsAbout = () => {
       </div>
 
       <div className={styles.filmsAbout__title}>
-        <h1>Film Making!</h1>
+        <h1>Film Making! 🎬</h1>
       </div>
       <div className={styles.filmsAbout__content}>
         <div className={styles.filmsAbout__content__one}>

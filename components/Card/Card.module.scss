@@ -1,5 +1,5 @@
 @import "../../styles/variables";
-
+@import "../../styles/breakpoint_manager";
 .flippableCard {
   position: relative;
   height: 40vh;
@@ -7,6 +7,9 @@
   perspective: 1500rem;
   border-radius: 10px;
   overflow: hidden;
+  @include respondTo(mobile) {
+    width: 95vw;
+  }
 
   &__face {
     backface-visibility: hidden;

@@ -11,6 +11,14 @@
   flex-direction: column;
   gap: 2rem;
   padding: $LAYOUT-PAGE-MARGIN-MEDIUM;
+  @include respondTo(mobile) {
+    text-align: center;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+  }
   &__title {
     align-self: center;
   }
@@ -20,13 +28,23 @@
     gap: 3rem;
     &__one {
       display: flex;
+      align-items: center;
+      @include respondTo(mobile) {
+        flex-direction: column;
+        gap: 2rem;
+      }
       & > div {
         flex: 1;
       }
     }
     &__two {
       display: flex;
+      align-items: center;
       flex-direction: row-reverse;
+      @include respondTo(mobile) {
+        flex-direction: column;
+        gap: 2rem;
+      }
       & > div {
         flex: 1;
       }
