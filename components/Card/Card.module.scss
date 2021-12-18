@@ -2,8 +2,8 @@
 @import "../../styles/breakpoint_manager";
 .flippableCard {
   position: relative;
-  height: 40vh;
-  width: 30vw;
+  height: 45vh;
+  width: 40vw;
   perspective: 1500rem;
   border-radius: 10px;
   overflow: hidden;
@@ -19,7 +19,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 40vh;
+    height: 100%;
     width: 100%;
   }
   &:hover &__back {
