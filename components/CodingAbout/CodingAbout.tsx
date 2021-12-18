@@ -7,7 +7,7 @@ export const CodingAbout = () => {
     <div className={styles.codingAbout}>
       <div className="bgVideo_container">
         <video className="bgVideo" autoPlay muted loop>
-          <source src="/videos/films.mp4" type="video/mp4" />
+          <source src="/videos/coding.mp4" type="video/mp4" />
         </video>
       </div>
 
