@@ -2,16 +2,7 @@ import { useEffect, useState } from "react";
 import { Skill, SkillPropsType } from "./Skill";
 import styles from "./Skills.module.scss";
 
-export const Skills = () => {
-  const [skills, setSkills] = useState<SkillPropsType[]>([]);
-  useEffect(() => {
-    const getSkillsData = async () => {
-      const data = await fetch("/api/skills");
-      const skillsData = await data.json();
-      setSkills(skillsData.skills);
-    };
-    getSkillsData();
-  }, []);
+export const Skills = ({ skills }: { skills: SkillPropsType[] }) => {
   return (
     <div className={styles.skills}>
       <span className={styles.skills__locator} id="skills"></span>
