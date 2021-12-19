@@ -8,8 +8,22 @@ import MessageBar from "../components/MessageBar";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
-
-const Portfolio: NextPage = () => {
+import {
+  getAllProjectsQueryString,
+  getAllSkillsQueryString,
+} from "../lib/sanityQueries";
+import { getClient } from "../lib/sanityUtils";
+export async function getStaticProps() {
+  const projects = await getClient().fetch(getAllProjectsQueryString());
+  const skills = await getClient().fetch(getAllSkillsQueryString());
+  return {
+    props: {
+      projects,
+      skills,
+    },
+  };
+}
+const Portfolio: NextPage = ({ projects, skills }: any) => {
   return (
     <>
       <Head>
@@ -27,10 +41,10 @@ const Portfolio: NextPage = () => {
           <About />
         </section>
         <section>
-          <Projects />
+          <Projects projects={projects} />
         </section>
         <section>
-          <Skills />
+          <Skills skills={skills} />
         </section>
         <footer>
           <Footer />
