@@ -2,26 +2,37 @@
 @import "../../styles/breakpoint_manager";
 .footer {
   display: flex;
+  flex-direction: column;
   position: relative;
   align-items: center;
-  justify-content: space-around;
+  gap: 10vh;
+  justify-content: center;
   margin-top: 10vh;
-  gap: 10vw;
   transition: all 0.5s;
   min-height: 80vh;
-  @include respondTo(mobile) {
-    flex-direction: column;
-    justify-content: center;
-    gap: 10vh;
-  }
   ::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     width: 100%;
 
     border-bottom: white solid 2px;
+  }
+  &__tech {
+    color: darken($COLOR-TEXT-PRIMARY, 50);
+    font-size: $FONT-SIZE-TEXT-LARGE;
+    text-align: center;
+  }
+  &__main {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    @include respondTo(mobile) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10vh;
+    }
   }
   &__text {
     font-size: $FONT-SIZE-TEXT * 1.2;
