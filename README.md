@@ -16,3 +16,11 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Technologies
+
+Technologies and their why's in this project
+
+<img src="https://img.shields.io/static/v1?label=Next%20JS&message=Server side rendering&logo=nextdotjs"><br/>
+<img src="https://img.shields.io/static/v1?label=React%20JS&message=Front End Library&logo=react"><br/>
+<img src="https://img.shields.io/static/v1?label=SCSS&message=CSS Preprocessing&logo=sass"><br/>
