@@ -4,5 +4,4 @@ const sanityConfig = {  // Find your project ID and dataset in `sanity.json` in 
     useCdn: process.env.NODE_ENV === 'production',
     apiVersion: "2021-06-07"
 }
-console.log(sanityConfig)
 export default sanityConfig

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Skill, SkillPropsType } from "./Skill";
 import styles from "./Skills.module.scss";
 
