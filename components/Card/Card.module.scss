@@ -11,6 +11,12 @@
     width: 95vw;
   }
 
+  &__image {
+    @include respondTo(mobile) {
+      object-position: center !important;
+    }
+  }
+
   &__face {
     backface-visibility: hidden;
     transition: all 0.5s;
