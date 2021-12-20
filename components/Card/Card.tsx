@@ -7,8 +7,8 @@ type CardPropsType = {
   bgPosition?: string;
   title: string;
   description: string;
-  btnText: string;
-  btnLink: string;
+  btnText?: string;
+  btnLink?: string;
 };
 export const FlippableCard = ({
   bgImage,
@@ -41,9 +41,11 @@ export const FlippableCard = ({
           <div className={styles.flippableCard__back__content__description}>
             {description}
           </div>
-          <div className={styles.flippableCard__back__content__button}>
-            <ExternalButton routePath={btnLink} content={btnText} />
-          </div>
+          {btnText && btnLink && (
+            <div className={styles.flippableCard__back__content__button}>
+              <ExternalButton routePath={btnLink} content={btnText} />
+            </div>
+          )}
         </div>
       </div>
     </div>

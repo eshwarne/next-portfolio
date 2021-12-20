@@ -1,7 +1,7 @@
 import FlippableCard from "../Card";
 import styles from "./GamingAbout.module.scss";
-import MultiverseFilm from "../../public/films_multiverse.jpeg";
-import DialFilm from "../../public/films_dial.jpeg";
+import AssassinsCreed from "../../public/assassins_creed.jpeg";
+import CallOfDuty from "../../public/call_of_duty.jpeg";
 export const GamingAbout = () => {
   return (
     <div className={styles.gamingAbout}>
@@ -26,11 +26,9 @@ export const GamingAbout = () => {
           </div>
           <div className={styles.gamingAbout__card}>
             <FlippableCard
-              bgImage={MultiverseFilm}
-              title="Multiverse"
-              description="This is my attempt at a fully fledged Multiverse short film on 0 budget"
-              btnText="Watch Multiverse!"
-              btnLink="/"
+              bgImage={CallOfDuty}
+              title="Call of Duty"
+              description="You can find me playing this game most weekends!"
             />
           </div>
         </div>
@@ -43,12 +41,10 @@ export const GamingAbout = () => {
           </div>
           <div className={styles.gamingAbout__card}>
             <FlippableCard
-              bgImage={DialFilm}
+              bgImage={AssassinsCreed}
               bgPosition="10% 0%"
-              description="A film that is close to my heart! Revolves around a unsolved mystery case in the neighborhood"
-              title="Dial"
-              btnText="Experience DIAL!"
-              btnLink="/"
+              description="I am a big Ezio fan! This game always had me thinking hard to solve puzzles. Highly reccomend this!"
+              title="Assassin's Creed"
             />
           </div>
         </div>

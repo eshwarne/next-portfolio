@@ -10,9 +10,14 @@ export const ExternalButton = ({
 }: ExternalButtonPropsType) => {
   return (
     <div className={styles.externalButton}>
-      <Link href={routePath}>
-        <a className={styles.externalButton__btn}>{content}</a>
-      </Link>
+      <a
+        href={routePath}
+        target="_blank"
+        className={styles.externalButton__btn}
+        rel="noreferrer"
+      >
+        {content}
+      </a>
     </div>
   );
 };

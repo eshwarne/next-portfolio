@@ -30,7 +30,7 @@ export const FilmsAbout = () => {
               title="Multiverse"
               description="This is my attempt at a fully fledged Multiverse short film on 0 budget"
               btnText="Watch Multiverse!"
-              btnLink="/"
+              btnLink="https://www.youtube.com/watch?v=_nD8oO6jtDI&t=166s"
             />
           </div>
         </div>
@@ -50,7 +50,7 @@ export const FilmsAbout = () => {
               description="A film that is close to my heart! Revolves around a unsolved mystery case in the neighborhood"
               title="Dial"
               btnText="Experience DIAL!"
-              btnLink="/"
+              btnLink="https://www.youtube.com/watch?v=8WKXpO9Zgko&t=20s"
             />
           </div>
         </div>
