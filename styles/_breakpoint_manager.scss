@@ -1,16 +1,11 @@
 @mixin respondTo($screen) {
-  @if $screen == mobile {
-    @media (max-width: 600px) {
-      @content;
-    }
-  }
   @if $screen == tablet-potrait {
     @media (max-width: 900px) {
       @content;
     }
   }
   @if $screen == tablet-landscape {
-    @media (max-width: 1200px) {
+    @media (max-width: 1200px) and (orientation: landscape) {
       @content;
     }
   }

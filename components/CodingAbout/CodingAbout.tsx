@@ -37,8 +37,8 @@ export const CodingAbout = () => {
 
         <div className={styles.codingAbout__content__two}>
           <div>
-            I primarily work on Web and mobile development. I love the way
-            distributed systems gossip with each other and solve problems
+            I primarily work on Web and tablet-potrait development. I love the
+            way distributed systems gossip with each other and solve problems
             together. I involve in architecting and designing systems and
             looking to explore more in this space. Big fan of the book{" "}
             <i>"Designing Data-Intensive Applications"</i>.<div></div>

@@ -4,7 +4,7 @@
   &__skill_item {
     &:nth-child(even) {
       transform: translateY(50%);
-      @include respondTo(mobile) {
+      @include respondTo(tablet-potrait) {
         transform: translateY(0%);
       }
     }

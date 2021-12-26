@@ -7,12 +7,12 @@
   perspective: 1500rem;
   border-radius: 10px;
   overflow: hidden;
-  @include respondTo(mobile) {
+  @include respondTo(tablet-potrait) {
     width: 95vw;
   }
 
   &__image {
-    @include respondTo(mobile) {
+    @include respondTo(tablet-potrait) {
       object-position: center !important;
     }
   }

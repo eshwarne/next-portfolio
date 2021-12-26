@@ -13,7 +13,7 @@
   backdrop-filter: blur(6px);
   justify-content: space-between;
   max-height: 15vh;
-  @include respondTo(mobile) {
+  @include respondTo(tablet-potrait) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
 .logo {
   font-size: $FONT-SIZE-HEADING-MAIN;
   text-align: center;
-  @include respondTo(mobile) {
+  @include respondTo(tablet-potrait) {
     font-size: 2rem;
   }
 }

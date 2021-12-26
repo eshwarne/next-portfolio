@@ -16,8 +16,8 @@ export const About = () => {
           <div>
             I love writing code! 👨‍💻 I strongly believe technology can change
             anything and that's why I am so passionate about it! I am trying to
-            make an impact in the Web and Mobile space. I love working across
-            the stack!
+            make an impact in the Web and tablet-potrait space. I love working
+            across the stack!
           </div>
           <div>
             When I am not coding, I make and act in sci-fi and thriller films
