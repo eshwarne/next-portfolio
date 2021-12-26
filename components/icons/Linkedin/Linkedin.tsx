@@ -1,9 +1,9 @@
 import * as React from "react";
 
-export const LinkedinIcon = (props:any) => (
+export const LinkedinIcon = (props: any) => (
   <svg
-    width="24px"
-    height="24px"
+    width="3rem"
+    height="3rem"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -18,5 +18,3 @@ export const LinkedinIcon = (props:any) => (
     <circle cx={4} cy={4} r={2} />
   </svg>
 );
-
-
